@@ -10,7 +10,7 @@ function shuffle(array) {
     var temp;
     var i;
 
-    // While there remain elements to shuffle…
+    // While there remain elements to be shuffled
     while(l) {
         // Pick a remaining element…
         i = Math.floor(Math.random() * l--);
