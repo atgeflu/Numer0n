@@ -1,5 +1,5 @@
 # Numer0n
-Implementation of the Numr0n game. https://ja.wikipedia.org/wiki/Numer0n
+Implementation of the Numer0n game. https://ja.wikipedia.org/wiki/Numer0n
 
 ##Explanation Videos of Game
 For an English explanation of the game see these videos: 
