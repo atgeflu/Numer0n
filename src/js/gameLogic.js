@@ -6,7 +6,7 @@
   * @return {array} array - Returns the shuffled array, even though this is not necessary, since it's shuffled in place
 */
 function shuffle(array) {
-	var l = array.length;
+    var l = array.length;
     var temp;
     var i;
 
@@ -21,6 +21,34 @@ function shuffle(array) {
     }
 
     return array;
+}
+
+
+/**
+  * @desc given two arrays (one being the chosen numbers the other being the opponents guess) returns the BITES and EATS
+  * @param {array, array} cards, guess - The arrays to be compared
+  * @return {array} result - Returns an array with two entries, the first being the number of BITES the second being the number of EATS
+*/
+function eatBites(cards, guess) {
+    var eats = 0;
+    var bites = 0;
+
+    if (Array.isArray(cards) && Array.isArray(guess)) {
+        if (cards.length === guess.length) {
+            for (var i = 0; i < cards.length; i++) {
+                if (cards[i] === guess[i]) {
+                    eats++;
+                } else if (cards.indexOf(guess[i]) > -1) {
+                    bites++;
+                }
+            }
+            return [eats, bites];
+        } else {
+            throw new Error("array's not same length");
+        }
+    } else {
+        throw new Error("input needs to be two arrays");
+    }
 }
 
 
