@@ -1,3 +1,5 @@
+-- Work in Progress
+
 # Numer0n
 Implementation of the Numer0n game. https://ja.wikipedia.org/wiki/Numer0n
 
